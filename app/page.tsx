@@ -315,7 +315,7 @@ export default function Home() {
 
         {/* FORM */}
         {isFormVisible && ( // Menampilkan form jika isFormVisible true
-          <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+          <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 text-black">
             <div className="bg-gray-100 p-5 rounded-lg w-full max-w-md relative">
               {" "}
               {/* Menambahkan relative pada elemen pembungkus form */}
