@@ -497,7 +497,7 @@ export default function Home() {
 
         {/* KONFIRMASI */}
         {isConfirmationVisible && ( // Menampilkan konfirmasi jika isConfirmationVisible true
-          <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+          <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 text-black">
             <div className="bg-white p-5 rounded-lg">
               <h2 className="text-xl font-semibold text-center py-3">
                 Konfirmasi
@@ -551,7 +551,7 @@ export default function Home() {
 
         {/* FORM PEMBAYARAN */}
         {isPaymentVisible && ( // Menampilkan form pembayaran jika isPaymentVisible true
-          <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+          <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 text-black">
             <div className="bg-white p-5 rounded-lg">
               <h2 className="text-xl font-semibold py-3">Pembayaran QRIS</h2>
               <p className="mb-4">
