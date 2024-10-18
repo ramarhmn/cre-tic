@@ -82,9 +82,9 @@ export default function Home() {
 
     // Simpan data form ke state
     setFormData({
-      name: form.name.value, // Mengakses value dari input name
-      email: form.email.value, // Mengakses value dari input email
-      whatsapp: form.phone.value, // Mengakses value dari input whatsapp
+      name: (form.elements.namedItem("name") as HTMLInputElement).value, // Mengakses value dari input name
+      email: (form.elements.namedItem("email") as HTMLInputElement).value, // Mengakses value dari input email
+      whatsapp: (form.elements.namedItem("phone") as HTMLInputElement).value, // Mengakses value dari input whatsapp
       amount: formData.amount, // Menyimpan amount yang sudah ada
     });
     setIsFormVisible(false); // Sembunyikan form setelah submit
