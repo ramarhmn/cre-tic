@@ -13,9 +13,6 @@ export default function Home() {
   const [formData, setFormData] = useState({ name: "", email: "", amount: "" }); // State untuk menyimpan data form
   const [selectedDay, setSelectedDay] = useState(""); // State untuk menyimpan pilihan hari
   const [isPaymentVisible, setIsPaymentVisible] = useState(false); // State untuk menampilkan form pembayaran
-  const isFormValid = Object.values(formData).every(
-    (field) => field.trim() !== ""
-  ); // Validasi form
 
   const [goldQuantity, setGoldQuantity] = useState(0); // State untuk jumlah tiket festival gold
   const goldPrice = 1875000; // Harga tiket festival gold
@@ -24,7 +21,6 @@ export default function Home() {
   const [notification, setNotification] = useState(""); // State untuk notifikasi
 
   const [dateOfBirth, setDateOfBirth] = useState(""); // State untuk tanggal lahir
-  const [day, setDay] = useState(""); // State untuk hari
   const [gender, setGender] = useState(""); // State untuk gender
 
   const increaseGoldQuantity = () => {
