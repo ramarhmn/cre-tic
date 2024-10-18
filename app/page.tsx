@@ -160,7 +160,7 @@ export default function Home() {
           <h1 className="text-2xl md:text-2xl text-white font-bold py-3 mt-4">
             Pilihan Tiket
           </h1>
-          <div className="flex flex-col bg-slate-100 rounded-lg p-7">
+          <div className="flex flex-col bg-slate-100 rounded-lg p-7 text-black">
             <div className="border-b border-gray-400">
               <h1 className="text-2xl md:text-3xl font-bold">
                 The Jakarta Christmas Concert
