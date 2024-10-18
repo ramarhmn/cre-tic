@@ -162,7 +162,7 @@ export default function Home() {
           </h1>
           <div className="flex flex-col bg-slate-100 rounded-lg p-7 text-black">
             <div className="border-b border-gray-400">
-              <h1 className="text-2xl md:text-3xl font-bold">
+              <h1 className="text-2xl md:text-3xl font-bold text-black">
                 The Jakarta Christmas Concert
               </h1>
               <div className="flex items-center mt-3 text-black">
