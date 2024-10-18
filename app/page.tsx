@@ -76,13 +76,15 @@ export default function Home() {
     setFormData((prevData) => ({ ...prevData, [name]: value })); // Update state formData
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => { // Menambahkan tipe untuk parameter e
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    const form = e.currentTarget; // Menyimpan referensi ke elemen form
+
     // Simpan data form ke state
     setFormData({
-      name: e.currentTarget.name.value, // Menambahkan name
-      email: e.currentTarget.email.value, // Menggunakan currentTarget untuk mengakses form
-      whatsapp: e.currentTarget.phone.value,
+      name: form.name.value, // Mengakses value dari input name
+      email: form.email.value, // Mengakses value dari input email
+      whatsapp: form.phone.value, // Mengakses value dari input whatsapp
       amount: formData.amount, // Menyimpan amount yang sudah ada
     });
     setIsFormVisible(false); // Sembunyikan form setelah submit
